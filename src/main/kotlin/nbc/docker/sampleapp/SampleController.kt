@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class SampleController {
 
-    val items = listOf<String>("item1", "item2")
+    val items = listOf<String>("item1", "item2","item3")
 
 //vasdf
     @GetMapping("/")
     fun home() = "hello"
-//sdfasdf
+
     @GetMapping("/items")
     fun findItems() = items
 }
